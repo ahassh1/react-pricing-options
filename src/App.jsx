@@ -1,18 +1,14 @@
-import './App.css'
-import DaisyNav from './components/DaisyNav/DaisyNav'
-import Navbar from './components/Navbar/Navbar'
+import "./App.css";
+import DaisyNav from "./components/DaisyNav/DaisyNav";
+import Navbar from "./components/Navbar/Navbar";
 
 function App() {
-
-
   return (
     <>
-         <Navbar></Navbar>
-         <DaisyNav></DaisyNav>
-        
-      
+      <Navbar></Navbar>
+      {/* <DaisyNav></DaisyNav> */}
     </>
-  )
+  );
 }
 
-export default App
+export default App;

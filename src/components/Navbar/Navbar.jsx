@@ -32,31 +32,32 @@ const navigationData = [
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
-   
-  const links = navigationData.map(route => (
-          <Link key={route.id} route={route}></Link>
-        ));
+
+  const links = navigationData.map((route) => (
+    <Link key={route.id} route={route}></Link>
+  ));
 
   return (
     <div>
-      <nav className="flex py-1.5 bg-pink-400 justify-between px-10">
+      <nav className="flex py-4 bg-pink-400 justify-between px-10 ">
         <span className="flex" onClick={() => setOpen(!open)}>
-          {open ? 
-            <X className="md:hidden"></X> :
-   
+          {open ? (
+            <X className="md:hidden"></X>
+          ) : (
             <Menu className="md:hidden"></Menu>
-          }
-          <ul className="md:hidden">      {
-            links
-          }</ul>
-    
-          <h3 className="pl-4">My Navbar</h3>
+          )}
+
+          <ul
+            className={`md:hidden absolute duration-1000 text-black
+                    ${open ? "top-10" : "-top-40"}
+                    bg-amber-200`}
+          >
+            {links}
+          </ul>
+
+          <h3 className="ml-4">My Navbar</h3>
         </span>
-         <ul className="md:flex hidden">
-           {
-           links
-           }
-         </ul>
+        <ul className="md:flex hidden">{links}</ul>
         <button>Sing In Now</button>
       </nav>
     </div>
