@@ -18,6 +18,7 @@
       "name": "Premium Plan",
       "price": "$49.99/month",
       "id": 2,
+      "popular":true,
       "description": "Perfect for individuals who want additional perks and flexibility.",
       "features": [
         "24/7 gym access",
@@ -27,8 +28,8 @@
         "Access to sauna and steam room",
         "Discount on merchandise and services",
         "Free towel service",
-        "Priority booking for personal training sessions",
-        "Access to exclusive member events"
+        "Priority booking for personal training sessions"
+       
       ]
     },
     {

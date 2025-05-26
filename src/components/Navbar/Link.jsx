@@ -4,7 +4,7 @@ const Link = ({ route }) => {
   return (
     <div>
       <ul>
-        <li className="lg:mr-10 px-4 bg-amber-200 "
+        <li className="lg:mr-10 px-4 bg-white "
         
         >
           <a href={route.path}>{route.name}</a>
