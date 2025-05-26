@@ -10,7 +10,7 @@ const pricingPromise = fetch('pricingData.json').then(res=>res.json());
 function App() {
   return (
     <>
-    <main>
+ 
       <Navbar></Navbar>
       {/* <DaisyNav></DaisyNav> */}
 
@@ -19,7 +19,7 @@ function App() {
         <PricingOptions pricingPromise={pricingPromise}></PricingOptions>
       </Suspense>
       <ResultsChart></ResultsChart>
-      </main>
+   
     </>
   );
 }
